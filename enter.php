@@ -1,26 +1,14 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-  <script language="javascript" type="text/javascript">
 
-function schoice(i) {
-    var idx = i.selectedIndex;
-    document.frm.select_html.value = i.options[idx].value;
-    document.frm.select_text.value = i.options[idx].text;
-}
-</script>
 <?php
+$con = mysqli_connect('localhost','root','dhrusdn93','project'); //데이터베이스 접속.
 
-$con = mysqli_connect("localhost","root","dhrusdn93","project");
- /*$count = $("input:checkbox[name=count]:checked").length */
-$count = $_POST['count'];
-
-$getcount = $count;
-
-
-  if($_POST['guetno'] == "T1"){
-      $sql = "
+  if($_POST['guetno'] == "T1")  // 1번 테이블을 선택했을때 DB 저장
+  {
+    $sql = "
     INSERT INTO table1
     (meno, counter)
     VALUES(
@@ -29,8 +17,7 @@ $getcount = $count;
       )
       ";
     }
-
-    elseif($_POST['guetno'] == 'T2')
+    elseif($_POST['guetno'] == 'T2')  // 2번 테이블을 선택했을때 DB 저장
     {
   $sql = "
     INSERT INTO table2
@@ -41,7 +28,7 @@ $getcount = $count;
       )
       ";
     }
-    elseif($_POST['guetno'] == 'T3')
+    elseif($_POST['guetno'] == 'T3')  // 3번 테이블을 선택했을때 DB 저장
     {
   $sql = "
     INSERT INTO table3
@@ -52,7 +39,7 @@ $getcount = $count;
       )
       ";
     }
-    elseif($_POST['guetno'] == 'T4')
+    elseif($_POST['guetno'] == 'T4')  // 4번 테이블을 선택했을때 DB 저장
     {
   $sql = "
     INSERT INTO table4
@@ -64,17 +51,20 @@ $getcount = $count;
       ";
     }
 
+else{
+  echo '';
+}
 
 $result = mysqli_query($con, $sql);
 
-  if($result === false){
+  if($result === false){  //주문 도중에 문제가 생겼을때 나오는 구문
     echo '주문이 완료되는 과정에서 문제가 생겼습니다. 관리자에게 문의해주세요';
     error_log(mysqli_error($con));
   }
   else{
     echo '';
   }
-*/
+
 ?>
 
 <style>
@@ -86,8 +76,8 @@ left: 15%; margin-left: =400px;
 }
 </style>
 </head>
-<body>
-  <a href="https://ohgyounwoo.github.io/ohproject/index0.php"> <img src="restart.jpg" align='abscenter' border='0'> </a>
+<body> <!-- 주문이 완료가 되고 다시 메뉴판으로 돌아각 위한 링크-->
+  <a href="index0.html"> <img src="restart.jpg" align='abscenter' border='0'> </a>
 </body>
 
 </html>

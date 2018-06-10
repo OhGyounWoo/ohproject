@@ -1,17 +1,21 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset = utf8>
+  <meta charset="utf-8">
   <?php
-  $con = mysqli_connect("localhost","root","dhrusdn93","project");
+  $conn = mysqli_connect('localhost','root','dhrusdn93','project'); //데이터베이스 접속
+  $sqlt1 = "SELECT meno, counter, (price * count) as tprice FROM table1";
 
+  $result = mysqli_query($conn, $sqlt1);
 
-  $sql = "SELECT meno, mename, price FROM menu WHERE meno = 101";
-  $result = mysqli_query($con, $sql);
+    while($row = mysqli_fetch_array($result){
 
-  while($row=mysqli_fetch_array($result)){
-  echo "name is ".$row['mename']
-}
+    printf("$d", $row['meno']);
+
+    }
+
   ?>
 </head>
+<body>
+</body>
 </html>
