@@ -74,7 +74,7 @@ table{margin-bottom: 0px;}
   <!--어느 테이블의 주문인지 테이블을 정하는 구역-->
 
     <div class="float-unit1">
-      <form action="enter.php" method="POST">
+      <form action="https://ohgyounwoo.github.io/ohproject/enter.php" method="POST">
 
         <img src="T1check-off.gif" width="40%"/>
 
@@ -108,7 +108,7 @@ table{margin-bottom: 0px;}
 
 
 <!--      <input type="button" formtarget="_blank" name="total" value="주문내역"> -->
-    <button onclick="window.open('https://192.168.1.66/total.php','주문내역','width = 300, height = 700, location=no, scrollbar=no');"> 주문내역 </button>
+    <button onclick="window.open('https://ohgyounwoo.github.io/ohproject/total.php','주문내역','width = 300, height = 700, location=no, scrollbar=no');"> 주문내역 </button>
 
 
               </p></center>
