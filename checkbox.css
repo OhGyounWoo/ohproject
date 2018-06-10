@@ -1,0 +1,127 @@
+.checkbox{
+  width: 50px;
+  height: 50px;
+  left: 130px;
+  background-color: #ddd;
+  position: relative;
+}
+.checkbox input[type="checkbox"]{
+  visibility: hidden;
+}
+.checkbox label{
+  width: 48px;
+  height: 48px;
+  position: absolute; right:0;
+  top: 1px;
+  left: 1px;
+  background-color: white;
+  cursor: pointer;
+}
+.checkbox label:before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  border: 3px solid black;
+  position: absolute;
+  border-top: none;
+  border-right: none;
+  transform: rotate(-135deg);
+  top: 15px;
+  left: 12px;
+  opacity: 0;
+}
+.checkbox input[type="checkbox"]:checked + label:before{
+  opacity: 1;
+}
+.checkbox input[type="checkbox"]:checked + label{
+  background-color: #57bba7;
+}
+
+
+.ccheckbox{
+  width: 50px;
+  height: 50px;
+  left: 295px;
+  background-color: #ddd;
+  position: relative;
+}
+.ccheckbox input[type="checkbox"]{
+  visibility: hidden;
+}
+.ccheckbox label{
+  width: 48px;
+  height: 48px;
+  position: absolute; right:0;
+  top: 1px;
+  left: 1px;
+  background-color: white;
+  cursor: pointer;
+}
+.ccheckbox label:before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  border: 3px solid black;
+  position: absolute;
+  border-top: none;
+  border-right: none;
+  transform: rotate(-135deg);
+  top: 15px;
+  left: 12px;
+  opacity: 0;
+}
+.ccheckbox input[type="checkbox"]:checked + label:before{
+  opacity: 1;
+}
+.ccheckbox input[type="checkbox"]:checked + label{
+  background-color: #57bba7;
+}
+
+
+
+.bcheckbox{
+  width: 50px;
+  height: 50px;
+  background-color: #ddd;
+  position: relative;
+}
+.bcheckbox input[type="checkbox"]{
+  visibility: hidden;
+}
+.bcheckbox label{
+  width: 48px;
+  height: 48px;
+  position: absolute; right:0;
+  top: 1px;
+  left: 1px;
+  background-color: white;
+  cursor: pointer;
+}
+.bcheckbox label:before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  border: 3px solid black;
+  position: absolute;
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg);
+  top: 15px;
+  left: 12px;
+  opacity: 0;
+}
+.bcheckbox input[type="checkbox"]:checked + label:before{
+  opacity: 1;
+}
+.bcheckbox input[type="checkbox"]:checked + label{
+  background-color: #57bba7;
+}
+
+.select {
+  border-radius:0; /* 아이폰 사파리 보더 없애기 */
+  -webkit-appearance:none; /* 화살표 없애기 for chrome*/
+  -moz-appearance:none; /* 화살표 없애기 for firefox*/
+  appearance:none /* 화살표 없애기 공통*/
+}
+
+.select::-ms-expand{ display:none /* 화살표 없애기 for IE10, 11*/ }

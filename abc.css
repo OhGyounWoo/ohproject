@@ -1,0 +1,62 @@
+.float-frame{
+  background: black;
+  border: 1px solid #ddd;
+  padding: 10px;
+  overflow: hidden;
+}
+.float-unit1{
+  width: 180px;
+  height: 595px;
+  background: white;
+  color: "black";
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  float: left;
+}
+.float-unit2{
+  width: 350px;
+  height: 595px;
+  background: white;
+  color: #black;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  float: left;
+}
+.float-unit3{
+  width: 355px;
+  height: 595px;
+  background: white;
+  color: #black;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  float: left;
+}
+.float-unit4{
+  width: 355px;
+  height: 595px;
+  background: white;
+  color: #black;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  float: left;
+}
+/*
+.float-unit3{
+  width: 780px;
+  height: 585px;
+  background: white;
+  color: #black;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  float: left;
+}*/
+.float-unit{
+  width: 5px;
+  height: 585px;
+  float: left;
+}
