@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+     <meta charset="utf-8">
+     <link href="abc.css" rel="stylesheet" type="text/css" />
+     <script>
+      window.onfocus=function(){
+      }
+      window.onload=function(){
+       window.focus(); // 현재 window 즉 익스플러러를 윈도우 최상단에 위치
+     window.moveTo(100,100); // 웹 페이지의 창 위치를 0,0 (왼쪽 최상단) 으로 고정
+     window.resizeTo(1285,740); // 웹페이지의 크기를 가로 1280 , 세로 740 으로 고정(확장 및 축소)
+     window.scrollTo(0,250); // 페이지 상단 광고를 바로 볼 수 있게 스크롤 위치를 조정
+      }
+
+     </script>
+
+     <style>
+
+     body, ul, h1,h2,h3,h4,h5,h6{
+       margin:0;
+       padding:0;
+     }
+
+     img{ position: absolute;
+     top:75%; margin-top: -294.5px;
+     /* 위에서 15% 내리고 그 옆의 숫자는 이미지의 세로 길이의 절만의 수치만큼 위호 올리는 것이다. */
+   left: 15%; margin-left: =400px;
+   /* 왼쪽에서 15%이동시키고 이미지의 가로 길이의 절만에 해당하는 만큼 왼쪽으로 당긴다.*/
+ }
+ </style>
+
+
+</head>
+<body bgcolor=blue>
+
+      <a href="https://192.168.1.66/index0.php">
+<img src="start.jpg" alt="start"/>
+      </a>
+
+    </body>
+</html>
