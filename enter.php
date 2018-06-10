@@ -18,64 +18,19 @@ $count = $_POST['count'];
 
 $getcount = $count;
 
-/*
-  if($_POST['guetno'] == "T1")
-  {
-    switch($getcount){
-    case 1:
+
+  if($_POST['guetno'] == "T1"){
       $sql = "
     INSERT INTO table1
     (meno, counter)
     VALUES(
       '{$_POST['meno']}',
-      1
+      '{$_POST['count']}'
       )
       ";
-      break;
-      case 2:
-        $sql = "
-      INSERT INTO table1
-      (meno, counter)
-      VALUES(
-        '{$_POST['meno']}',
-        2
-        )
-        ";
-      break;
-      case 3:
-      $sql = "
-    INSERT INTO table1
-    (meno, counter)
-    VALUES(
-      '{$_POST['meno']}',
-      3
-      )
-      ";
-      break;
-      case 4:
-      break;
-      $sql = "
-    INSERT INTO table1
-    (meno, counter)
-    VALUES(
-      '{$_POST['meno']}',
-      4
-      )
-      ";
-      case 5:
-      $sql = "
-    INSERT INTO table1
-    (meno, counter)
-    VALUES(
-      '{$_POST['meno']}',
-      5
-      )
-      ";
-      break;
-    }
     }
 
-    else if($_POST['guetno'] == 'T2')
+    elseif($_POST['guetno'] == 'T2')
     {
   $sql = "
     INSERT INTO table2
@@ -86,7 +41,7 @@ $getcount = $count;
       )
       ";
     }
-    else if($_POST['guetno'] == 'T3')
+    elseif($_POST['guetno'] == 'T3')
     {
   $sql = "
     INSERT INTO table3
@@ -97,7 +52,7 @@ $getcount = $count;
       )
       ";
     }
-    else if($_POST['guetno'] == 'T4')
+    elseif($_POST['guetno'] == 'T4')
     {
   $sql = "
     INSERT INTO table4
