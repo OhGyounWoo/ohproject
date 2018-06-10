@@ -18,7 +18,7 @@
       window.onload=function(){
        window.focus(); // 현재 window 즉 익스플러러를 윈도우 최상단에 위치
        window.moveTo(100,100); // 웹 페이지의 창 위치를 0,0 (왼쪽 최상단) 으로 고정
-       window.resizeTo(1290,740); // 웹페이지의 크기를 가로 1280 , 세로 740 으로 고정(확장 및 축소)
+       window.resizeTo(1300,740); // 웹페이지의 크기를 가로 1300 , 세로 740 으로 고정(확장 및 축소)
        window.scrollTo(0,250); // 페이지 상단 광고를 바로 볼 수 있게 스크롤 위치를 조정
       }
 
@@ -45,13 +45,13 @@ table{margin-bottom: 0px;}
 
 </head>
 
-<body bgcolor=blue>
+<body background="문양패턴.jpg">
 
   <!--어느 테이블의 주문인지 테이블을 정하는 구역-->
 
     <div class="float-unit1"> <!--메뉴판의 구역을 나눔.-->
-      <center><p><button onclick="window.open('http://ohgyounwoo.github.io/ohproject/total.php','주문내역','width = 300, height = 700, location=no, scrollbar=no');"> 주문내역 </button></p></center> <!--주문 내역을 확인하기 위한 버큰-->
-      <form action="http://ohgyounwoo.github.io/ohproject/enter.php" method="POST"><!--데이터 베이스에 저장을 위한 메소드 선언-->
+      <center><p><button onclick="window.open('total.php','주문내역','width = 300, height = 700, location=no, scrollbar=no');"> 주문내역 </button></p></center> <!--주문 내역을 확인하기 위한 버큰-->
+      <form action="enter.php" method="POST"><!--데이터 베이스에 저장을 위한 메소드 선언-->
 <table width="180px" height="100px" border='0'bgcolor="#57bba7">
   <tr>
     <td align="center">
